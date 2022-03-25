@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_policy_action">
+    <sys_ui_policy_action action="DELETE">
+        <cleared>false</cleared>
+        <disabled>true</disabled>
+        <field>u_end_time</field>
+        <mandatory>ignore</mandatory>
+        <sys_class_name>sys_ui_policy_action</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-03-25 22:09:24</sys_created_on>
+        <sys_id>4030d89c2fe2011067ed24c62799b682</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>u_end_time</sys_name>
+        <sys_package display_value="Conference Room Reservation" source="x_776893_conferenc">88a4d66b2f16011067ed24c62799b6e8</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Conference Room Reservation">88a4d66b2f16011067ed24c62799b6e8</sys_scope>
+        <sys_update_name>sys_ui_policy_action_4030d89c2fe2011067ed24c62799b682</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-03-25 22:09:24</sys_updated_on>
+        <table>x_776893_conferenc_room_reservations</table>
+        <ui_policy display_value="Make End Time read only if it has passed current time">0bff885c2fe2011067ed24c62799b6ff</ui_policy>
+        <visible>ignore</visible>
+    </sys_ui_policy_action>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Conference Room Reservation">88a4d66b2f16011067ed24c62799b6e8</application>
+        <file_path/>
+        <instance_id>df562e2adbc9d700cbf6d5b0cf96191f</instance_id>
+        <instance_name>dev53994</instance_name>
+        <name>sys_ui_policy_action_4030d89c2fe2011067ed24c62799b682</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_policy_action"><sys_ui_policy_action action="INSERT_OR_UPDATE"><cleared>false</cleared><disabled>true</disabled><field>u_end_time</field><mandatory>ignore</mandatory><sys_class_name>sys_ui_policy_action</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2022-03-25 22:09:24</sys_created_on><sys_id>4030d89c2fe2011067ed24c62799b682</sys_id><sys_mod_count>0</sys_mod_count><sys_name>u_end_time</sys_name><sys_package display_value="Conference Room Reservation" source="x_776893_conferenc">88a4d66b2f16011067ed24c62799b6e8</sys_package><sys_policy/><sys_scope display_value="Conference Room Reservation">88a4d66b2f16011067ed24c62799b6e8</sys_scope><sys_update_name>sys_ui_policy_action_4030d89c2fe2011067ed24c62799b682</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2022-03-25 22:09:24</sys_updated_on><table>x_776893_conferenc_room_reservations</table><ui_policy display_value="Make End Time read only if it has passed current time">0bff885c2fe2011067ed24c62799b6ff</ui_policy><visible>ignore</visible></sys_ui_policy_action></record_update>]]></payload>
+        <payload_hash>973195030</payload_hash>
+        <record_name>u_end_time</record_name>
+        <reverted_from/>
+        <source>48a4d66b2f16011067ed24c62799b6ea</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-03-25 22:09:24</sys_created_on>
+        <sys_id>de30d89c2fe2011067ed24c62799b6d9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17fc3208d5a0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-03-25 22:09:24</sys_updated_on>
+        <type>UI Policy Action</type>
+        <update_guid>1a30d89ce5e20110b4f421c02d51bcd9</update_guid>
+        <update_guid_history>1a30d89ce5e20110b4f421c02d51bcd9:973195030</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-03-25 22:13:04</sys_created_on>
+        <sys_db_object display_value="" name="sys_ui_policy_action">sys_ui_policy_action</sys_db_object>
+        <sys_id>240a4456063749608a00e49a6057fa10</sys_id>
+        <sys_metadata>4030d89c2fe2011067ed24c62799b682</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>u_end_time</sys_name>
+        <sys_package display_value="Conference Room Reservation" source="x_776893_conferenc">88a4d66b2f16011067ed24c62799b6e8</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Conference Room Reservation">88a4d66b2f16011067ed24c62799b6e8</sys_scope>
+        <sys_scope_delete display_value="">3fa4b1838b7f455ebe65e8da5ba76f44</sys_scope_delete>
+        <sys_update_name>sys_ui_policy_action_4030d89c2fe2011067ed24c62799b682</sys_update_name>
+        <sys_update_version display_value="sys_ui_policy_action_4030d89c2fe2011067ed24c62799b682">de30d89c2fe2011067ed24c62799b6d9</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-03-25 22:13:04</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

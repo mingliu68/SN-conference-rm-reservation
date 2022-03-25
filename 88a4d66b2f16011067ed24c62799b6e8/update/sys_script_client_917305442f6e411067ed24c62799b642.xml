@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description/>
+        <field>u_available_rooms</field>
+        <global>true</global>
+        <isolate_script>true</isolate_script>
+        <messages/>
+        <name>Set Conference Room from User Selection</name>
+        <order/>
+        <script><![CDATA[function onChange(control, oldValue, newValue, isLoading, isTemplate) {
+   if (isLoading || newValue === '') {
+      return;
+   }
+	g_form.clearValue('u_conference_room');
+	g_form.addInfoMessage(g_form.getValue('u_available_rooms'));
+	g_form.setValue('u_conference_room', g_form.getValue('u_available_rooms'));	
+   
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-03-25 07:19:39</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>917305442f6e411067ed24c62799b642</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name>Set Conference Room from User Selection</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Conference Room Reservation" source="x_776893_conferenc">88a4d66b2f16011067ed24c62799b6e8</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Conference Room Reservation">88a4d66b2f16011067ed24c62799b6e8</sys_scope>
+        <sys_update_name>sys_script_client_917305442f6e411067ed24c62799b642</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-03-25 07:38:16</sys_updated_on>
+        <table>x_776893_conferenc_room_reservations</table>
+        <type>onChange</type>
+        <ui_type>0</ui_type>
+        <view/>
+    </sys_script_client>
+</record_update>

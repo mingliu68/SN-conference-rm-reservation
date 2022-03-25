@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_related sys_domain="global" table="x_776893_conferenc_conference_rooms" version="2" view="">
+        <sys_ui_related_list_entry action="INSERT_OR_UPDATE">
+            <filter/>
+            <list_id display_value="Conference Rooms - Default view" name="x_776893_conferenc_conference_rooms" related_list="NULL" sys_domain="global" view="Default view">adcacd0c2f6e411067ed24c62799b60c</list_id>
+            <order_by/>
+            <position>0</position>
+            <related_list>x_776893_conferenc_room_reservations.u_conference_room</related_list>
+            <sys_class_name>sys_ui_related_list_entry</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-03-25 07:46:44</sys_created_on>
+            <sys_id>65cacd0c2f6e411067ed24c62799b60e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-03-25 07:46:44</sys_updated_on>
+        </sys_ui_related_list_entry>
+        <sys_ui_related_list action="INSERT_OR_UPDATE">
+            <calculated_name>Conference Rooms - Default view</calculated_name>
+            <filter/>
+            <name>x_776893_conferenc_conference_rooms</name>
+            <order_by/>
+            <position/>
+            <related_list/>
+            <sys_class_name>sys_ui_related_list</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-03-25 07:46:44</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>adcacd0c2f6e411067ed24c62799b60c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Conference Rooms - Default view</sys_name>
+            <sys_package display_value="Conference Room Reservation" source="x_776893_conferenc">88a4d66b2f16011067ed24c62799b6e8</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Conference Room Reservation">88a4d66b2f16011067ed24c62799b6e8</sys_scope>
+            <sys_update_name>sys_ui_related_x_776893_conferenc_conference_rooms_null</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-03-25 07:46:44</sys_updated_on>
+            <sys_user/>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_related_list>
+    </sys_ui_related>
+</record_update>

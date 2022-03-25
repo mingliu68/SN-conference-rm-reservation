@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description/>
+        <field>duration</field>
+        <global>true</global>
+        <isolate_script>true</isolate_script>
+        <messages/>
+        <name>Update Available Rooms</name>
+        <order/>
+        <script><![CDATA[function onChange(control, oldValue, newValue, isLoading, isTemplate) {
+   if (isLoading || newValue === '') {
+      return;
+   }
+	g_form.clearOptions('u_available_rooms');
+	var getRooms = new GlideAjax('Reservation_Script_Include');
+	getRooms.addParam('sysparm_name', 'getAvailableRooms');
+	getRooms.addParam('sysparm_startTime', g_form.getValue('start_time'));
+	getRooms.addParam('sysparm_endTime', g_form.getValue('u_end_time'));
+	getRooms.addParam('sysparm_recordSysId', g_form.isNewRecord() ?  null : g_form.getUniqueValue());
+	
+	getRooms.getXML(returnedRooms);
+	
+	function returnedRooms(response) {
+		var roomsFromScriptInclude = response.responseXML.documentElement.getAttribute('answer');
+		var availableRooms = [];
+		availableRooms = JSON.parse(roomsFromScriptInclude);
+		for (var i = 0; i < availableRooms.length; i++) {
+			g_form.addOption('u_available_rooms', availableRooms[i].sysId, availableRooms[i].room);
+			g_form.addInfoMessage("Room " + i + ": " + availableRooms[i].room + ", " + availableRooms[i].sysId);
+		}
+	}
+   
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-03-24 08:19:55</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>fdb6883b2fda011067ed24c62799b674</sys_id>
+        <sys_mod_count>45</sys_mod_count>
+        <sys_name>Update Available Rooms</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Conference Room Reservation" source="x_776893_conferenc">88a4d66b2f16011067ed24c62799b6e8</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Conference Room Reservation">88a4d66b2f16011067ed24c62799b6e8</sys_scope>
+        <sys_update_name>sys_script_client_fdb6883b2fda011067ed24c62799b674</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-03-25 22:02:23</sys_updated_on>
+        <table>x_776893_conferenc_room_reservations</table>
+        <type>onChange</type>
+        <ui_type>0</ui_type>
+        <view/>
+    </sys_script_client>
+</record_update>
