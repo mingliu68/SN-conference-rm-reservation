@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ui_policy">
     <sys_ui_policy action="INSERT_OR_UPDATE">
         <active>true</active>
-        <conditions table="x_776893_conferenc_room_reservations">start_time&lt;=javascript:gs.endOfCurrentMinute()^EQ<item endquery="false" field="start_time" goto="false" newquery="false" operator="&lt;=" or="false" value="javascript:gs.endOfCurrentMinute()"/>
+        <conditions table="x_776893_conferenc_room_reservations">start_time&lt;=javascript:gs.endOfCurrentMinute()^u_active=true^EQ<item endquery="false" field="start_time" goto="false" newquery="false" operator="&lt;=" or="false" value="javascript:gs.endOfCurrentMinute()"/>
+            <item endquery="false" field="u_active" goto="false" newquery="false" operator="=" or="false" value="true"/>
             <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
         </conditions>
         <description/>
@@ -29,7 +30,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>7949272f2f5a011067ed24c62799b6c3</sys_id>
-        <sys_mod_count>12</sys_mod_count>
+        <sys_mod_count>13</sys_mod_count>
         <sys_name>Hide both End Date /Time and Duration if Start Date / Time is before or equal to current time.</sys_name>
         <sys_overrides/>
         <sys_package display_value="Conference Room Reservation" source="x_776893_conferenc">88a4d66b2f16011067ed24c62799b6e8</sys_package>
@@ -37,7 +38,7 @@
         <sys_scope display_value="Conference Room Reservation">88a4d66b2f16011067ed24c62799b6e8</sys_scope>
         <sys_update_name>sys_ui_policy_7949272f2f5a011067ed24c62799b6c3</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2022-03-25 18:31:16</sys_updated_on>
+        <sys_updated_on>2022-03-26 19:39:15</sys_updated_on>
         <table>x_776893_conferenc_room_reservations</table>
         <ui_type>10</ui_type>
         <view/>
