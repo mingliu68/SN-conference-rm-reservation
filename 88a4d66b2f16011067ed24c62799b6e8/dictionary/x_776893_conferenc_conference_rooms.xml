@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Conference Rooms" max_length="40" name="x_776893_conferenc_conference_rooms" sizeclass="2" type="collection">
+        <element label="Approval Required" max_length="40" name="approval_required" type="boolean"/>
+        <element label="Capacity" mandatory="true" max_length="40" name="capacity" type="integer"/>
+        <element attributes="edge_encryption_enabled=true" label="Description" max_length="500" name="description" type="string"/>
+        <element label="Has TV?" max_length="40" name="has_tv" type="boolean"/>
+        <element attributes="encode_utf8=false" label="Location" mandatory="true" max_length="32" name="location" reference="cmn_location" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" label="Name" mandatory="true" max_length="40" name="name" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Short Description" mandatory="true" max_length="150" name="short_description" type="string"/>
+        <index name="index">
+            <element name="location"/>
+        </index>
+    </element>
+</database>

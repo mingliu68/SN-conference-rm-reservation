@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Room Reservations" max_length="40" name="x_776893_conferenc_room_reservations" sizeclass="6" type="collection">
+        <element label="Duration" max_length="40" name="duration" read_only="true" type="string"/>
+        <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" read_only="true" type="string"/>
+        <element attributes="encode_utf8=false" label="Requester" mandatory="true" max_length="32" name="requester" reference="sys_user" type="reference"/>
+        <element label="Start Date / Time" mandatory="true" max_length="40" name="start_time" type="glide_date_time"/>
+        <element default="true" label="Active" max_length="40" name="u_active" read_only="true" type="boolean"/>
+        <element attributes="edge_encryption_enabled=true" choice="3" label="Available Rooms" mandatory="true" max_length="40" name="u_available_rooms" type="string">
+            <choice/>
+        </element>
+        <element attributes="encode_utf8=false" label="Conference Room" max_length="32" name="u_conference_room" read_only="true" reference="x_776893_conferenc_conference_rooms" type="reference"/>
+        <element label="End Date / Time" mandatory="true" max_length="40" name="u_end_time" type="glide_date_time"/>
+        <index name="index">
+            <element name="requester"/>
+        </index>
+        <index name="index2">
+            <element name="u_conference_room"/>
+        </index>
+    </element>
+</database>
