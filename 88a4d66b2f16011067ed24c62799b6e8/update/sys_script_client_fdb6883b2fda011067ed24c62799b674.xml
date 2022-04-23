@@ -28,8 +28,8 @@
 		var availableRooms = [];
 		availableRooms = JSON.parse(roomsFromScriptInclude);
 		for (var i = 0; i < availableRooms.length; i++) {
-			g_form.addOption('u_available_rooms', availableRooms[i].sysId, availableRooms[i].room);
-			g_form.addInfoMessage("Room " + i + ": " + availableRooms[i].room + ", " + availableRooms[i].sysId);
+			g_form.addOption('u_available_rooms', availableRooms[i].sysId, availableRooms[i].room + " ( " + availableRooms[i].capacity + " person )");
+			/* g_form.addInfoMessage("Room " + i + ": " + availableRooms[i].room + ", " + availableRooms[i].capacity); */
 		}
 	}
    
@@ -40,7 +40,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>fdb6883b2fda011067ed24c62799b674</sys_id>
-        <sys_mod_count>45</sys_mod_count>
+        <sys_mod_count>49</sys_mod_count>
         <sys_name>Update Available Rooms</sys_name>
         <sys_overrides/>
         <sys_package display_value="Conference Room Reservation" source="x_776893_conferenc">88a4d66b2f16011067ed24c62799b6e8</sys_package>
@@ -48,7 +48,7 @@
         <sys_scope display_value="Conference Room Reservation">88a4d66b2f16011067ed24c62799b6e8</sys_scope>
         <sys_update_name>sys_script_client_fdb6883b2fda011067ed24c62799b674</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2022-03-25 22:02:23</sys_updated_on>
+        <sys_updated_on>2022-04-23 22:17:59</sys_updated_on>
         <table>x_776893_conferenc_room_reservations</table>
         <type>onChange</type>
         <ui_type>0</ui_type>
